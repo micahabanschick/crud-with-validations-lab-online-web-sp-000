@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <% @songs.each do |song| %>
   <h1><%= song.title %></h1>
   <p><%= song.release_year %></p>
@@ -41,3 +42,12 @@
     <% end %>
   </tbody>
 </table>
+=======
+<% @songs.each |song| do %>
+  <h1><%= song.title %></h1>
+  <% song.each |atr| do %>
+    <p><%= atr %></p>
+  <% end %>
+  <br>
+<% end %>
+>>>>>>> 436a11b6f76adbc01840856dd3abffe4c5dab7b3
